@@ -1,0 +1,9 @@
+free
+    dd if=/dev/zero of=/swapfile bs=128M count=8
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    swapon -s
+    free
+    servive nagios restart
+    service nagios restart

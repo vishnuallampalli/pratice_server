@@ -1,0 +1,13 @@
+name: play for creating an aws ec2 instance
+ hosts: localhost
+ connection: local
+ tasks:
+-
+ name: creation of ece instance using ec2 module
+ ec2:
+instance type: t2.micro
+ image: ami-0763a557efelaagc
+ region: ap-south-1
+ key_name: 8ambatch
+ aws_access _key: AKIAVDTPXPFXGGOJIZN5
+aws_secret_key: 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
